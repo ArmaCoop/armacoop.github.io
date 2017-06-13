@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+<div class="container">
+    <div class="row flash">
+        <div class="ten columns">
+            <marquee scrollamount="2">[16/05/2017] - Sortie du DLC Jets</marquee>
+        </div>
+        <div class="two columns">
+            Hello World
+        </div>
+    </div>
+    <div class="row">
+        <div class="eight columns presentation">
+            <iframe class="u-full-width" src="https://www.youtube.com/embed/9-26S5BApk8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            <div class="more-desc">Trailer : DLC Jets</div>
+        </div>
+        <div class="four columns more-infos">
+            <div class="missions-map">
+                <img src="{{site.baseurl}}/assets/img/altis-map.jpg">
+                <div class="more-desc">Les missions</div>
+            </div>
+            <div class="arma-articles">
+                <img src="{{site.baseurl}}/assets/img/article.jpg">
+                <div class="more-desc">Les articles</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="twelve columns articles-vrac">
+            {% for post in paginator.posts %}
+                <h1>{{post.title}}</h1>  
+            {% endfor %}
+            <!-- Pagination links -->
+            {% if paginator.total_pages > 1 %}
+                <div class="pagination">
+                {% if paginator.previous_page %}
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+                {% else %}
+                    <span>&laquo; Prev</span>
+                {% endif %}
+
+                {% for page in (1..paginator.total_pages) %}
+                    {% if page == paginator.page %}
+                        {{ page }}
+                    {% elsif page == 1 %}
+                        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                    {% else %}
+                        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                    {% endif %}
+                {% endfor %}
+
+                {% if paginator.next_page %}
+                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+                {% else %}
+                    <span>Next &raquo;</span>
+                {% endif %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,116 @@
+body {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    min-height: 1695px;
+    background-attachment: scroll;
+    color: white;
+    font-family: font77082;
+}
+
+
+/* Titre du site */
+
+.site-name {
+    padding: 50px 0 50px;
+}
+
+.title {
+    font-family: font135564;
+    text-transform: uppercase;
+    color: #D2D2D2;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 30px;
+}
+
+
+/* Barre d'info du site */
+
+.flash {
+    font-family: font135564;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+/* Images Cliquable */
+
+.presentation {
+    background-color: black;
+    height: 370px;
+    overflow: hidden;
+}
+
+.presentation iframe {
+    height: 370px;
+}
+
+.presentation .more-desc {
+    position: relative;
+    top: -361px;
+    padding-left: 10px;
+    padding-bottom: 2px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.missions-map {
+    background-color: black;
+    height: 175px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.missions-map img{
+    width: 370px;
+    position: relative;
+    bottom: 50px;
+    left: -5%;
+}
+
+.missions-map .more-desc {
+    position: relative;
+    bottom: 152px;
+    padding-left: 10px;
+    padding-bottom: 2px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.arma-articles {
+    background-color: black;
+    height: 175px;
+    overflow: hidden;
+}
+
+.arma-articles img{
+    height: 200px;
+}
+
+.arma-articles .more-desc {
+    position: relative;
+    bottom: 51px;
+    padding-left: 10px;
+    padding-bottom: 2px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Articles en vrac page d'accueil */
+
+.articles-vrac {
+    background-color: rgba(0, 0, 0, 0.6);
+    min-height: 850px;
+    max-height: 850px;
+    margin: 30px 0 30px;
+    padding: 20px 50px;
+}
+
+/* Footer */
+
+footer {
+    padding-bottom: 50px;
+    font-family: font135564;
+    text-transform: uppercase;
+    color: #D2D2D2;
+    text-align: center;
+}
