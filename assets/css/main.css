@@ -3,14 +3,14 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
-    min-height: 1695px;
-    background-attachment: scroll;
+    max-height: 1695px;
+    background-attachment: fixed;
     color: white;
     font-family: font77082;
 }
 
 
-/* Titre du site */
+/* -------------------- Titre du site -------------------- */
 
 .site-name {
     padding: 50px 0 50px;
@@ -26,16 +26,17 @@ body {
 }
 
 
-/* Barre d'info du site */
+/* -------------------- Barre d'info du site -------------------- */
 
 .flash {
     font-family: font135564;
     background: rgba(0, 0, 0, 0.6);
-    padding: 10px 0;
+    padding: 10px 50px 10px 50px;
     margin-bottom: 30px;
+    font-size: 18px;
 }
 
-/* Images Cliquable */
+/* -------------------- Images Cliquable -------------------- */
 
 .presentation {
     background-color: black;
@@ -95,17 +96,93 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Articles en vrac page d'accueil */
+/* -------------------- Articles en vrac page d'accueil -------------------- */
 
 .articles-vrac {
     background-color: rgba(0, 0, 0, 0.6);
-    min-height: 850px;
     max-height: 850px;
     margin: 30px 0 30px;
-    padding: 20px 50px;
+    padding: 20px 50px 30px;
 }
 
-/* Footer */
+.articles-vrac a {
+    text-decoration: none;
+    color: white;
+}
+
+.articles-vrac h1,
+.articles-vrac h2,
+.articles-vrac h3,
+.articles-vrac h4,
+.articles-vrac h5,
+.articles-vrac h6 {
+    padding-left: 30px;
+}
+
+.articles-vrac p {
+    text-align: justify;
+    font-size: 16px;
+}
+
+.articles-vrac p.date {
+    text-align: right; /* mettre a right */
+    margin-top: -20px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.articles-vrac hr {
+    opacity: 0.2;
+    margin: -10px 0 30px;
+}
+
+/*.articles-vrac hr:last-child {
+    display: none;
+}*/
+
+/* -------------------- Page des articles -------------------- */
+
+.article-page {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 50px 20px;
+    margin-bottom: 30px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.article-page .author {
+    font-size: 16px;
+}
+
+.article-page .author i {
+    margin-right: 10px;
+}
+
+.article-page .author p {
+    margin-right: 30px;
+    display: inline;
+}
+
+.article-page hr {
+    opacity: 0.3;
+    margin: 5px 0 30px;
+}
+
+.article-page h1,
+.article-page h2,
+.article-page h3,
+.article-page h4,
+.article-page h5,
+.article-page h6 {
+    padding-left: 30px;
+}
+
+.article-page img {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* -------------------- Footer -------------------- */
 
 footer {
     padding-bottom: 50px;

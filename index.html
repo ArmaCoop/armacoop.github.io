@@ -1,20 +1,15 @@
 ---
 layout: default
+title: Arma Coop
 ---
 
 <div class="container">
-    <div class="row flash">
-        <div class="ten columns">
-            <marquee scrollamount="2">[16/05/2017] - Sortie du DLC Jets</marquee>
-        </div>
-        <div class="two columns">
-            Hello World
-        </div>
-    </div>
     <div class="row">
         <div class="eight columns presentation">
-            <iframe class="u-full-width" src="https://www.youtube.com/embed/9-26S5BApk8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-            <div class="more-desc">Trailer : DLC Jets</div>
+            {% for info in site.categories.info limit:1 %}
+            <iframe class="u-full-width" src="{{info.videolink}}?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            <div class="more-desc">{{info.videotitle}}</div>
+            {% endfor %}
         </div>
         <div class="four columns more-infos">
             <div class="missions-map">
@@ -23,14 +18,39 @@ layout: default
             </div>
             <div class="arma-articles">
                 <img src="{{site.baseurl}}/assets/img/article.jpg">
-                <div class="more-desc">Les articles</div>
+                <div class="more-desc">Archives</div>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="twelve columns articles-vrac">
             {% for post in paginator.posts %}
-                <h1>{{post.title}}</h1>  
+                <a href="{{post.url}}">
+                <div class="article">
+                    <h5>{{post.title}}</h5>
+                    <p>{{post.meta}}</p>
+                    <p class="date">
+                    {% assign m = post.date | date: "%-m" %}
+                    {{ post.date | date: "%-d" }}
+                    {% case m %}
+                        {% when '1' %}Janvier
+                        {% when '2' %}Février
+                        {% when '3' %}Mars
+                        {% when '4' %}Avril
+                        {% when '5' %}Mai
+                        {% when '6' %}Juin
+                        {% when '7' %}Juillet
+                        {% when '8' %}Août
+                        {% when '9' %}Septembre
+                        {% when '10' %}Octobre
+                        {% when '11' %}Novembre
+                        {% when '12' %}Décembre
+                    {% endcase %}
+                    {{ post.date | date: "%Y" }}
+                    </p>
+                </div>
+                </a>
+                <hr>
             {% endfor %}
             <!-- Pagination links -->
             {% if paginator.total_pages > 1 %}
@@ -58,6 +78,17 @@ layout: default
                 {% endif %}
                 </div>
             {% endif %}
+            <!-- Archive -->
+            <!--{% for post in site.posts %}
+                {% capture month %}{{ post.date | date: '%m%Y' }}{% endcapture %}
+                {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
+                    {% if month != nmonth %}
+                        {% if forloop.index != 1 %}</ul>{% endif %}
+                        <h3>{{ post.date | date: '%B %Y' }}</h3><ul>
+                    {% endif %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                <time>{{ post.date | date: "%e %B %Y" }}</time>
+            {% endfor %}-->
         </div>
     </div>
 </div>
