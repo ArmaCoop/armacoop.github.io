@@ -9,6 +9,13 @@ body {
     font-family: font77082;
 }
 
+a {
+    color: #C48214;
+}
+a:hover {
+    color: #C48214;
+}
+
 
 /* -------------------- Titre du site -------------------- */
 
@@ -54,6 +61,11 @@ body {
     padding-left: 10px;
     padding-bottom: 2px;
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+.more-infos a {
+    text-decoration: none;
+    color: white;
 }
 
 .missions-map {
@@ -136,9 +148,42 @@ body {
     margin: -10px 0 30px;
 }
 
-/*.articles-vrac hr:last-child {
-    display: none;
-}*/
+.articles-vrac .pagination {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.articles-vrac button.changepage {
+    font-size: 14px;
+    color: #FFF;
+    background-color: #C48214;
+    border: none;
+    transition: 0.2s;
+}
+
+.articles-vrac button.pagenumber {
+    padding: 0 20px;
+}
+
+.articles-vrac button.changepage:hover {
+    font-size: 14px;
+    color: #FFF;
+    background-color: #222222;
+    border: none;
+    transition: 0.2s;
+}
+
+.articles-vrac button.buttondisabled {
+    font-size: 14px;
+    color: #FFF;
+    background-color: #222222;
+    border: none;
+}
+
+
 
 /* -------------------- Page des articles -------------------- */
 
