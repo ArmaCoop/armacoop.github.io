@@ -16,7 +16,7 @@
 title: Arma Coop
 email: lucasalbert67@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Des articles sympa, des news importantes, des maps, des tutos et bien plus encore. Et tout sur Arma 3
+  Des articles sympa, des news importantes, des maps, des tutos et bien plus encore. Et tout sur Arma 3 !
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: MrDragonXM15
