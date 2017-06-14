@@ -10,7 +10,7 @@
     <div class="row flash">
         <div class="twelve columns">
             {% for info in site.categories.info limit:1 %}
-            <marquee scrollamount="2">[{{info.date | date: "%d/%m/%Y"}}] - {{info.title}}</marquee>
+            <marquee scrollamount="2">[{{info.dateinfo}}] - {{info.title}}</marquee>
             {% endfor %}
         </div>
     </div>

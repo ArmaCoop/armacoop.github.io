@@ -63,6 +63,12 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+@media (max-width: 735px) {
+    .presentation {
+        margin-bottom: 20px;
+    }
+}
+
 .more-infos a {
     text-decoration: none;
     color: white;
