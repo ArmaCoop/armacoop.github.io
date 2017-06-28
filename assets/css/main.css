@@ -12,6 +12,7 @@ body {
 a {
     color: #C48214;
 }
+
 a:hover {
     color: #C48214;
 }
@@ -42,6 +43,7 @@ a:hover {
     margin-bottom: 30px;
     font-size: 18px;
 }
+
 
 /* -------------------- Images Cliquable -------------------- */
 
@@ -81,7 +83,7 @@ a:hover {
     margin-bottom: 20px;
 }
 
-.missions-map img{
+.missions-map img {
     width: 370px;
     position: relative;
     bottom: 50px;
@@ -102,7 +104,7 @@ a:hover {
     overflow: hidden;
 }
 
-.arma-articles img{
+.arma-articles img {
     height: 200px;
 }
 
@@ -113,6 +115,7 @@ a:hover {
     padding-bottom: 2px;
     background-color: rgba(0, 0, 0, 0.8);
 }
+
 
 /* -------------------- Articles en vrac page d'accueil -------------------- */
 
@@ -143,7 +146,7 @@ a:hover {
 }
 
 .articles-vrac p.date {
-    text-align: right; /* mettre a right */
+    text-align: right;
     margin-top: -20px;
     margin-right: 10px;
     font-size: 12px;
@@ -190,7 +193,6 @@ a:hover {
 }
 
 
-
 /* -------------------- Page des articles -------------------- */
 
 .article-page {
@@ -214,6 +216,10 @@ a:hover {
     display: inline;
 }
 
+.article-page .mission {
+    margin-top: 40px;
+}
+
 .article-page hr {
     opacity: 0.3;
     margin: 5px 0 30px;
@@ -232,6 +238,7 @@ a:hover {
     max-width: 100%;
     box-sizing: border-box;
 }
+
 
 /* -------------------- Footer -------------------- */
 
